@@ -1,0 +1,2737 @@
+{
+  "version": 24,
+  "language": "zh-Hant",
+  "name": "",
+  "yearPillar": "己酉",
+  "monthPillar": "丁丑",
+  "dayPillar": "丙申",
+  "timePillar": "己亥",
+  "solarDate": "1970/01/16 22:00",
+  "lunarDate": "農曆 一九六九年腊月初九",
+  "zodiacSign": "雞",
+  "timeAdjustment": 0,
+  "gender": "male",
+  "calendarType": "solar",
+  "wuXing": {
+    "year": {
+      "tianGan": "土",
+      "diZhi": "金",
+      "raw": {
+        "tianGan": "土",
+        "diZhi": "金"
+      }
+    },
+    "month": {
+      "tianGan": "火",
+      "diZhi": "土",
+      "raw": {
+        "tianGan": "火",
+        "diZhi": "土"
+      }
+    },
+    "day": {
+      "tianGan": "火",
+      "diZhi": "金",
+      "raw": {
+        "tianGan": "火",
+        "diZhi": "金"
+      }
+    },
+    "time": {
+      "tianGan": "土",
+      "diZhi": "水",
+      "raw": {
+        "tianGan": "土",
+        "diZhi": "水"
+      }
+    }
+  },
+  "mingGe": {
+    "type": "正官格",
+    "description": "正官格重規矩，有領導才能，適合從政、當領導。",
+    "relations": [
+      {
+        "gan": "己",
+        "relation": "無關係"
+      },
+      {
+        "gan": "丁",
+        "relation": "無關係"
+      },
+      {
+        "gan": "己",
+        "relation": "無關係"
+      }
+    ],
+    "strength": {
+      "isStrong": false,
+      "explanation": "日主中和 分數：-0.8\n\n主要影響因素：\n- 月令與日主同氣，較為有利\n- 火生土\n- 與火同氣\n- 火生土\n- 火生土\n- 水克火\n\n身弱宜印綬幫身，事業方向可以考慮學術、教育等領域。"
+    }
+  },
+  "mingType": "丙火命",
+  "wuXingAnalysis": {
+    "counts": {
+      "金": 2,
+      "木": 0,
+      "水": 1,
+      "火": 2,
+      "土": 3
+    },
+    "strongest": "土",
+    "weakest": "木",
+    "analysis": "八字中五行分佈: 金(2) 木(0) 水(1) 火(2) 土(3) \n\n以數量而言，土最旺，木最弱。\n\n土生金，剋水 金適中，基本平衡。"
+  },
+  "shiShenAnalysis": {
+    "relations": [
+      {
+        "pillar": "年柱",
+        "rawPillar": "年柱",
+        "shiShen": "傷官",
+        "description": "代表創新、變革、叛逆，不守舊"
+      },
+      {
+        "pillar": "月柱",
+        "rawPillar": "月柱",
+        "shiShen": "劫財",
+        "description": "代表競爭、衝突，需要智慧處理"
+      },
+      {
+        "pillar": "時柱",
+        "rawPillar": "时柱",
+        "shiShen": "傷官",
+        "description": "代表創新、變革、叛逆，不守舊"
+      },
+      {
+        "pillar": "年支",
+        "rawPillar": "年支",
+        "shiShen": "正財",
+        "description": "代表正財、正當事業，善於理財",
+        "strength": 1,
+        "isHidden": true
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "傷官",
+        "description": "代表創新、變革、叛逆，不守舊",
+        "strength": 1,
+        "isHidden": true
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "正官",
+        "description": "代表正統權威、地位、名譽，適合從政、當領導",
+        "strength": 0.7,
+        "isHidden": true
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "正財",
+        "description": "代表正財、正當事業，善於理財",
+        "strength": 0.5,
+        "isHidden": true
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "偏財",
+        "description": "代表偏財、投機，富冒險精神",
+        "strength": 1,
+        "isHidden": true
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "七杀",
+        "description": "代表非正統權力、個性、進取心，但易衝動",
+        "strength": 0.7,
+        "isHidden": true
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "食神",
+        "description": "代表才智、口才、人緣，適合文教、飲食行業",
+        "strength": 0.5,
+        "isHidden": true
+      },
+      {
+        "pillar": "時支",
+        "rawPillar": "时支",
+        "shiShen": "七杀",
+        "description": "代表非正統權力、個性、進取心，但易衝動",
+        "strength": 1,
+        "isHidden": true
+      },
+      {
+        "pillar": "時支",
+        "rawPillar": "时支",
+        "shiShen": "偏印",
+        "description": "代表非正統學習、創造力、藝術天分，但易固執",
+        "strength": 0.7,
+        "isHidden": true
+      }
+    ],
+    "analysis": "日主所見十神分佈：\n傷官(3次) 劫財(1次) 正財(2次) 正官(1次) 偏財(1次) 七杀(2次) 食神(1次) 偏印(1次) \n\n此分析顯示您八字中十神的分佈情況。"
+  },
+  "shenShaAnalysis": {
+    "total": 20,
+    "jiShen": [
+      {
+        "name": "天乙贵人",
+        "displayName": "天乙貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "貴人相助，逢凶化吉",
+        "briefDescription": "貴人相助，逢凶化吉",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      },
+      {
+        "name": "天乙贵人",
+        "displayName": "天乙貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "貴人相助，逢凶化吉",
+        "briefDescription": "貴人相助，逢凶化吉",
+        "location": "年柱(己酉)",
+        "pillar": "年柱",
+        "ganZhi": "己酉"
+      },
+      {
+        "name": "天乙贵人",
+        "displayName": "天乙貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "貴人相助，逢凶化吉",
+        "briefDescription": "貴人相助，逢凶化吉",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      },
+      {
+        "name": "太极贵人",
+        "displayName": "太極貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "福祿兼得，晚景安康",
+        "briefDescription": "福祿兼得，晚景安康",
+        "location": "月柱(丁丑)",
+        "pillar": "月柱",
+        "ganZhi": "丁丑"
+      },
+      {
+        "name": "太极贵人",
+        "displayName": "太極貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "福祿兼得，晚景安康",
+        "briefDescription": "福祿兼得，晚景安康",
+        "location": "年柱(己酉)",
+        "pillar": "年柱",
+        "ganZhi": "己酉"
+      },
+      {
+        "name": "文昌贵人",
+        "displayName": "文昌貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "才華橫溢，文筆生花",
+        "briefDescription": "才華橫溢，文筆生花",
+        "location": "年柱(己酉)",
+        "pillar": "年柱",
+        "ganZhi": "己酉"
+      },
+      {
+        "name": "文昌贵人",
+        "displayName": "文昌貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "才華橫溢，文筆生花",
+        "briefDescription": "才華橫溢，文筆生花",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      },
+      {
+        "name": "驿马",
+        "displayName": "驛馬",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "動中求財，奔波升遷",
+        "briefDescription": "動中求財，奔波升遷",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      },
+      {
+        "name": "桃花",
+        "displayName": "桃花",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "異性緣佳，風流多情",
+        "briefDescription": "異性緣佳，風流多情",
+        "location": "年柱(己酉)",
+        "pillar": "年柱",
+        "ganZhi": "己酉"
+      },
+      {
+        "name": "华盖",
+        "displayName": "華蓋",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "藝術天賦，孤高清傲",
+        "briefDescription": "藝術天賦，孤高清傲",
+        "location": "月柱(丁丑)",
+        "pillar": "月柱",
+        "ganZhi": "丁丑"
+      },
+      {
+        "name": "国印贵人",
+        "displayName": "國印貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "掌印之權，正直忠信",
+        "briefDescription": "掌印之權，正直忠信",
+        "location": "月柱(丁丑)",
+        "pillar": "月柱",
+        "ganZhi": "丁丑"
+      },
+      {
+        "name": "词馆",
+        "displayName": "詞館",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "文章蓋世，聲名遠播",
+        "briefDescription": "文章蓋世，聲名遠播",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      },
+      {
+        "name": "天厨贵人",
+        "displayName": "天廚貴人",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "食祿豐厚，口福不淺",
+        "briefDescription": "食祿豐厚，口福不淺",
+        "location": "年柱(己酉)",
+        "pillar": "年柱",
+        "ganZhi": "己酉"
+      },
+      {
+        "name": "学堂",
+        "displayName": "學堂",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "文曲高照，金榜題名",
+        "briefDescription": "文曲高照，金榜題名",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      },
+      {
+        "name": "金舆",
+        "displayName": "金輿",
+        "type": "吉神",
+        "rawType": "吉神",
+        "description": "配偶得力，車馬安康",
+        "briefDescription": "配偶得力，車馬安康",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      }
+    ],
+    "xiongSha": [
+      {
+        "name": "孤辰",
+        "displayName": "孤辰",
+        "type": "凶煞",
+        "rawType": "凶煞",
+        "description": "孤獨清高，六親緣薄",
+        "briefDescription": "孤獨清高，六親緣薄",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      },
+      {
+        "name": "亡神",
+        "displayName": "亡神",
+        "type": "凶煞",
+        "rawType": "凶煞",
+        "description": "城府深沉，謀略過人",
+        "briefDescription": "城府深沉，謀略過人",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      },
+      {
+        "name": "亡神",
+        "displayName": "亡神",
+        "type": "凶煞",
+        "rawType": "凶煞",
+        "description": "城府深沉，謀略過人",
+        "briefDescription": "城府深沉，謀略過人",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      },
+      {
+        "name": "十恶大败",
+        "displayName": "十惡大敗",
+        "type": "凶煞",
+        "rawType": "凶煞",
+        "description": "敗家之兆，難守祖業",
+        "briefDescription": "敗家之兆，難守祖業",
+        "location": "日柱(丙申)",
+        "pillar": "日柱",
+        "ganZhi": "丙申"
+      },
+      {
+        "name": "丧门",
+        "displayName": "喪門",
+        "type": "凶煞",
+        "rawType": "凶煞",
+        "description": "喪事臨門，傷病破財",
+        "briefDescription": "喪事臨門，傷病破財",
+        "location": "時柱(己亥)",
+        "pillar": "时柱",
+        "ganZhi": "己亥"
+      }
+    ],
+    "analysis": "本命神煞分析：\n吉神共15个，凶煞共5个。\n\n吉神列表：\n- 天乙贵人在日柱(丙申)：貴人相助，逢凶化吉\n- 天乙贵人在年柱(己酉)：貴人相助，逢凶化吉\n- 天乙贵人在時柱(己亥)：貴人相助，逢凶化吉\n- 太极贵人在月柱(丁丑)：福祿兼得，晚景安康\n- 太极贵人在年柱(己酉)：福祿兼得，晚景安康\n- 文昌贵人在年柱(己酉)：才華橫溢，文筆生花\n- 文昌贵人在日柱(丙申)：才華橫溢，文筆生花\n- 驿马在時柱(己亥)：動中求財，奔波升遷\n- 桃花在年柱(己酉)：異性緣佳，風流多情\n- 华盖在月柱(丁丑)：藝術天賦，孤高清傲\n- 国印贵人在月柱(丁丑)：掌印之權，正直忠信\n- 词馆在時柱(己亥)：文章蓋世，聲名遠播\n- 天厨贵人在年柱(己酉)：食祿豐厚，口福不淺\n- 学堂在日柱(丙申)：文曲高照，金榜題名\n- 金舆在日柱(丙申)：配偶得力，車馬安康\n\n凶煞列表：\n- 孤辰在時柱(己亥)：孤獨清高，六親緣薄\n- 亡神在日柱(丙申)：城府深沉，謀略過人\n- 亡神在時柱(己亥)：城府深沉，謀略過人\n- 十恶大败在日柱(丙申)：敗家之兆，難守祖業\n- 丧门在時柱(己亥)：喪事臨門，傷病破財\n\n神煞总体偏吉，吉神多于凶煞，有贵人相助。",
+    "score": 0
+  },
+  "daYunWithStarting": {
+    "startingAge": {
+      "age": "起運時間：3年7個月後",
+      "exactHours": "精確小時：236",
+      "startDate": "起運日期：8/26/1973, 6:00:00 PM",
+      "startAge": 3,
+      "startAgeMonths": 7,
+      "exactHoursNumber": 236,
+      "startDateObj": "1973-08-26T18:00:00.000Z"
+    },
+    "daYun": [
+      {
+        "index": 1,
+        "ageRange": "年齡範圍：5-14歲",
+        "dateRange": {
+          "start": "8/26/1973, 6:00:00 PM",
+          "end": "8/25/1983, 6:00:00 PM"
+        },
+        "startYear": 5,
+        "endYear": 14,
+        "startDate": "1973-08-26T18:00:00.000Z",
+        "endDate": "1983-08-25T18:00:00.000Z",
+        "ganZhi": "丙子",
+        "wuXing": {
+          "tianGan": "火",
+          "diZhi": "水"
+        },
+        "shiShen": "比肩",
+        "rawShiShen": "比肩"
+      },
+      {
+        "index": 2,
+        "ageRange": "年齡範圍：15-24歲",
+        "dateRange": {
+          "start": "8/26/1983, 6:00:00 PM",
+          "end": "8/25/1993, 6:00:00 PM"
+        },
+        "startYear": 15,
+        "endYear": 24,
+        "startDate": "1983-08-26T18:00:00.000Z",
+        "endDate": "1993-08-25T18:00:00.000Z",
+        "ganZhi": "乙亥",
+        "wuXing": {
+          "tianGan": "木",
+          "diZhi": "水"
+        },
+        "shiShen": "正印",
+        "rawShiShen": "正印"
+      },
+      {
+        "index": 3,
+        "ageRange": "年齡範圍：25-34歲",
+        "dateRange": {
+          "start": "8/26/1993, 6:00:00 PM",
+          "end": "8/25/2003, 6:00:00 PM"
+        },
+        "startYear": 25,
+        "endYear": 34,
+        "startDate": "1993-08-26T18:00:00.000Z",
+        "endDate": "2003-08-25T18:00:00.000Z",
+        "ganZhi": "甲戌",
+        "wuXing": {
+          "tianGan": "木",
+          "diZhi": "土"
+        },
+        "shiShen": "偏印",
+        "rawShiShen": "偏印"
+      },
+      {
+        "index": 4,
+        "ageRange": "年齡範圍：35-44歲",
+        "dateRange": {
+          "start": "8/26/2003, 6:00:00 PM",
+          "end": "8/25/2013, 6:00:00 PM"
+        },
+        "startYear": 35,
+        "endYear": 44,
+        "startDate": "2003-08-26T18:00:00.000Z",
+        "endDate": "2013-08-25T18:00:00.000Z",
+        "ganZhi": "癸酉",
+        "wuXing": {
+          "tianGan": "水",
+          "diZhi": "金"
+        },
+        "shiShen": "正官",
+        "rawShiShen": "正官"
+      },
+      {
+        "index": 5,
+        "ageRange": "年齡範圍：45-54歲",
+        "dateRange": {
+          "start": "8/26/2013, 6:00:00 PM",
+          "end": "8/25/2023, 6:00:00 PM"
+        },
+        "startYear": 45,
+        "endYear": 54,
+        "startDate": "2013-08-26T18:00:00.000Z",
+        "endDate": "2023-08-25T18:00:00.000Z",
+        "ganZhi": "壬申",
+        "wuXing": {
+          "tianGan": "水",
+          "diZhi": "金"
+        },
+        "shiShen": "七杀",
+        "rawShiShen": "七杀"
+      },
+      {
+        "index": 6,
+        "ageRange": "年齡範圍：55-64歲",
+        "dateRange": {
+          "start": "8/26/2023, 6:00:00 PM",
+          "end": "8/25/2033, 6:00:00 PM"
+        },
+        "startYear": 55,
+        "endYear": 64,
+        "startDate": "2023-08-26T18:00:00.000Z",
+        "endDate": "2033-08-25T18:00:00.000Z",
+        "ganZhi": "辛未",
+        "wuXing": {
+          "tianGan": "金",
+          "diZhi": "土"
+        },
+        "shiShen": "正財",
+        "rawShiShen": "正财"
+      },
+      {
+        "index": 7,
+        "ageRange": "年齡範圍：65-74歲",
+        "dateRange": {
+          "start": "8/26/2033, 6:00:00 PM",
+          "end": "8/25/2043, 6:00:00 PM"
+        },
+        "startYear": 65,
+        "endYear": 74,
+        "startDate": "2033-08-26T18:00:00.000Z",
+        "endDate": "2043-08-25T18:00:00.000Z",
+        "ganZhi": "庚午",
+        "wuXing": {
+          "tianGan": "金",
+          "diZhi": "火"
+        },
+        "shiShen": "偏財",
+        "rawShiShen": "偏财"
+      },
+      {
+        "index": 8,
+        "ageRange": "年齡範圍：75-84歲",
+        "dateRange": {
+          "start": "8/26/2043, 6:00:00 PM",
+          "end": "8/25/2053, 6:00:00 PM"
+        },
+        "startYear": 75,
+        "endYear": 84,
+        "startDate": "2043-08-26T18:00:00.000Z",
+        "endDate": "2053-08-25T18:00:00.000Z",
+        "ganZhi": "己巳",
+        "wuXing": {
+          "tianGan": "土",
+          "diZhi": "火"
+        },
+        "shiShen": "傷官",
+        "rawShiShen": "伤官"
+      }
+    ]
+  },
+  "liuNian": [
+    {
+      "year": 1970,
+      "age": 1,
+      "ganZhi": "庚戌",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 1971,
+      "age": 2,
+      "ganZhi": "辛亥",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 1972,
+      "age": 3,
+      "ganZhi": "壬子",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 1973,
+      "age": 4,
+      "ganZhi": "癸丑",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 1974,
+      "age": 5,
+      "ganZhi": "甲寅",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 1975,
+      "age": 6,
+      "ganZhi": "乙卯",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 1976,
+      "age": 7,
+      "ganZhi": "丙辰",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 1977,
+      "age": 8,
+      "ganZhi": "丁巳",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 1978,
+      "age": 9,
+      "ganZhi": "戊午",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 1979,
+      "age": 10,
+      "ganZhi": "己未",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 1980,
+      "age": 11,
+      "ganZhi": "庚申",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 1981,
+      "age": 12,
+      "ganZhi": "辛酉",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 1982,
+      "age": 13,
+      "ganZhi": "壬戌",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 1983,
+      "age": 14,
+      "ganZhi": "癸亥",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 1984,
+      "age": 15,
+      "ganZhi": "甲子",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 1985,
+      "age": 16,
+      "ganZhi": "乙丑",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 1986,
+      "age": 17,
+      "ganZhi": "丙寅",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 1987,
+      "age": 18,
+      "ganZhi": "丁卯",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 1988,
+      "age": 19,
+      "ganZhi": "戊辰",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 1989,
+      "age": 20,
+      "ganZhi": "己巳",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 1990,
+      "age": 21,
+      "ganZhi": "庚午",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 1991,
+      "age": 22,
+      "ganZhi": "辛未",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 1992,
+      "age": 23,
+      "ganZhi": "壬申",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 1993,
+      "age": 24,
+      "ganZhi": "癸酉",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 1994,
+      "age": 25,
+      "ganZhi": "甲戌",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 1995,
+      "age": 26,
+      "ganZhi": "乙亥",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 1996,
+      "age": 27,
+      "ganZhi": "丙子",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 1997,
+      "age": 28,
+      "ganZhi": "丁丑",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 1998,
+      "age": 29,
+      "ganZhi": "戊寅",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 1999,
+      "age": 30,
+      "ganZhi": "己卯",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 2000,
+      "age": 31,
+      "ganZhi": "庚辰",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 2001,
+      "age": 32,
+      "ganZhi": "辛巳",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 2002,
+      "age": 33,
+      "ganZhi": "壬午",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 2003,
+      "age": 34,
+      "ganZhi": "癸未",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 2004,
+      "age": 35,
+      "ganZhi": "甲申",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 2005,
+      "age": 36,
+      "ganZhi": "乙酉",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 2006,
+      "age": 37,
+      "ganZhi": "丙戌",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 2007,
+      "age": 38,
+      "ganZhi": "丁亥",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 2008,
+      "age": 39,
+      "ganZhi": "戊子",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 2009,
+      "age": 40,
+      "ganZhi": "己丑",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 2010,
+      "age": 41,
+      "ganZhi": "庚寅",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 2011,
+      "age": 42,
+      "ganZhi": "辛卯",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 2012,
+      "age": 43,
+      "ganZhi": "壬辰",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 2013,
+      "age": 44,
+      "ganZhi": "癸巳",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 2014,
+      "age": 45,
+      "ganZhi": "甲午",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 2015,
+      "age": 46,
+      "ganZhi": "乙未",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 2016,
+      "age": 47,
+      "ganZhi": "丙申",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 2017,
+      "age": 48,
+      "ganZhi": "丁酉",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 2018,
+      "age": 49,
+      "ganZhi": "戊戌",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 2019,
+      "age": 50,
+      "ganZhi": "己亥",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 2020,
+      "age": 51,
+      "ganZhi": "庚子",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 2021,
+      "age": 52,
+      "ganZhi": "辛丑",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 2022,
+      "age": 53,
+      "ganZhi": "壬寅",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 2023,
+      "age": 54,
+      "ganZhi": "癸卯",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 2024,
+      "age": 55,
+      "ganZhi": "甲辰",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 2025,
+      "age": 56,
+      "ganZhi": "乙巳",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 2026,
+      "age": 57,
+      "ganZhi": "丙午",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    },
+    {
+      "year": 2027,
+      "age": 58,
+      "ganZhi": "丁未",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财"
+    },
+    {
+      "year": 2028,
+      "age": 59,
+      "ganZhi": "戊申",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神"
+    },
+    {
+      "year": 2029,
+      "age": 60,
+      "ganZhi": "己酉",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官"
+    },
+    {
+      "year": 2030,
+      "age": 61,
+      "ganZhi": "庚戌",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财"
+    },
+    {
+      "year": 2031,
+      "age": 62,
+      "ganZhi": "辛亥",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财"
+    },
+    {
+      "year": 2032,
+      "age": 63,
+      "ganZhi": "壬子",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀"
+    },
+    {
+      "year": 2033,
+      "age": 64,
+      "ganZhi": "癸丑",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官"
+    },
+    {
+      "year": 2034,
+      "age": 65,
+      "ganZhi": "甲寅",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印"
+    },
+    {
+      "year": 2035,
+      "age": 66,
+      "ganZhi": "乙卯",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印"
+    },
+    {
+      "year": 2036,
+      "age": 67,
+      "ganZhi": "丙辰",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩"
+    }
+  ],
+  "liuYue": [
+    {
+      "year": 2025,
+      "month": 6,
+      "ganZhi": "癸未",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官",
+      "analysis": "適合處理公務，升遷有望，但需謹慎行事。 水旺利於學習溝通，增進人際關係。",
+      "jieQi": {
+        "name": "大暑",
+        "start": {
+          "solar": "2025-07-22",
+          "lunar": "二〇二五年六月廿八"
+        },
+        "end": {
+          "solar": "2025-08-07",
+          "lunar": "二〇二五年闰六月十四"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "ganZhi": "甲申",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印",
+      "analysis": "創意靈感多，適合獨立發展，藝術天分顯露。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "立秋",
+        "start": {
+          "solar": "2025-08-07",
+          "lunar": "二〇二五年闰六月十四"
+        },
+        "end": {
+          "solar": "2025-08-23",
+          "lunar": "二〇二五年七月初一"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "ganZhi": "甲申",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印",
+      "analysis": "創意靈感多，適合獨立發展，藝術天分顯露。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "處暑",
+        "start": {
+          "solar": "2025-08-23",
+          "lunar": "二〇二五年七月初一"
+        },
+        "end": {
+          "solar": "2025-09-07",
+          "lunar": "二〇二五年七月十六"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "ganZhi": "乙酉",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印",
+      "analysis": "適合學習進修，貴人運旺，可獲長輩提攜。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "白露",
+        "start": {
+          "solar": "2025-09-07",
+          "lunar": "二〇二五年七月十六"
+        },
+        "end": {
+          "solar": "2025-09-23",
+          "lunar": "二〇二五年八月初二"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "ganZhi": "乙酉",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印",
+      "analysis": "適合學習進修，貴人運旺，可獲長輩提攜。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "秋分",
+        "start": {
+          "solar": "2025-09-23",
+          "lunar": "二〇二五年八月初二"
+        },
+        "end": {
+          "solar": "2025-10-08",
+          "lunar": "二〇二五年八月十七"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "ganZhi": "丙戌",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩",
+      "analysis": "合作共事順利，團隊發展良好，競爭力強。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "寒露",
+        "start": {
+          "solar": "2025-10-08",
+          "lunar": "二〇二五年八月十七"
+        },
+        "end": {
+          "solar": "2025-10-23",
+          "lunar": "二〇二五年九月初三"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "ganZhi": "丙戌",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩",
+      "analysis": "合作共事順利，團隊發展良好，競爭力強。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "霜降",
+        "start": {
+          "solar": "2025-10-23",
+          "lunar": "二〇二五年九月初三"
+        },
+        "end": {
+          "solar": "2025-11-07",
+          "lunar": "二〇二五年九月十八"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "ganZhi": "丁亥",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财",
+      "analysis": "競爭激烈，易有衝突，需沉著應對。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "立冬",
+        "start": {
+          "solar": "2025-11-07",
+          "lunar": "二〇二五年九月十八"
+        },
+        "end": {
+          "solar": "2025-11-22",
+          "lunar": "二〇二五年十月初三"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "ganZhi": "丁亥",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财",
+      "analysis": "競爭激烈，易有衝突，需沉著應對。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "小雪",
+        "start": {
+          "solar": "2025-11-22",
+          "lunar": "二〇二五年十月初三"
+        },
+        "end": {
+          "solar": "2025-12-07",
+          "lunar": "二〇二五年十月十八"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "ganZhi": "戊子",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神",
+      "analysis": "人緣運佳，社交順利，適合展示才能。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "大雪",
+        "start": {
+          "solar": "2025-12-07",
+          "lunar": "二〇二五年十月十八"
+        },
+        "end": {
+          "solar": "2025-12-21",
+          "lunar": "二〇二五年冬月初二"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "ganZhi": "戊子",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神",
+      "analysis": "人緣運佳，社交順利，適合展示才能。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "冬至",
+        "start": {
+          "solar": "2025-12-21",
+          "lunar": "二〇二五年冬月初二"
+        },
+        "end": {
+          "solar": "2026-01-05",
+          "lunar": "二〇二五年冬月十七"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "ganZhi": "己丑",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官",
+      "analysis": "創新力強，變革有利，但需注意人際關係。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "小寒",
+        "start": {
+          "solar": "2026-01-05",
+          "lunar": "二〇二五年冬月十七"
+        },
+        "end": {
+          "solar": "2026-01-20",
+          "lunar": "二〇二五年腊月初二"
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "ganZhi": "己丑",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官",
+      "analysis": "創新力強，變革有利，但需注意人際關係。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "大寒",
+        "start": {
+          "solar": "2026-01-20",
+          "lunar": "二〇二五年腊月初二"
+        },
+        "end": {
+          "solar": "2025-02-03",
+          "lunar": "二〇二五年正月初六"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "ganZhi": "庚寅",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财",
+      "analysis": "偏財運旺，意外收穫多，投資機會增加。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "立春",
+        "start": {
+          "solar": "2026-02-04",
+          "lunar": "二〇二五年腊月十七"
+        },
+        "end": {
+          "solar": "2026-02-18",
+          "lunar": "二〇二六年正月初二"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "ganZhi": "庚寅",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财",
+      "analysis": "偏財運旺，意外收穫多，投資機會增加。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "雨水",
+        "start": {
+          "solar": "2026-02-18",
+          "lunar": "二〇二六年正月初二"
+        },
+        "end": {
+          "solar": "2026-03-05",
+          "lunar": "二〇二六年正月十七"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "ganZhi": "辛卯",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财",
+      "analysis": "財運穩定，適合投資理財，業務拓展順利。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "驚蟄",
+        "start": {
+          "solar": "2026-03-05",
+          "lunar": "二〇二六年正月十七"
+        },
+        "end": {
+          "solar": "2026-03-20",
+          "lunar": "二〇二六年二月初二"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "ganZhi": "辛卯",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "木",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "木"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财",
+      "analysis": "財運穩定，適合投資理財，業務拓展順利。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "春分",
+        "start": {
+          "solar": "2026-03-20",
+          "lunar": "二〇二六年二月初二"
+        },
+        "end": {
+          "solar": "2026-04-05",
+          "lunar": "二〇二六年二月十八"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "ganZhi": "壬辰",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀",
+      "analysis": "事業有突破，創業機會多，注意把握分寸。 水旺利於學習溝通，增進人際關係。",
+      "jieQi": {
+        "name": "清明",
+        "start": {
+          "solar": "2026-04-05",
+          "lunar": "二〇二六年二月十八"
+        },
+        "end": {
+          "solar": "2026-04-20",
+          "lunar": "二〇二六年三月初四"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "ganZhi": "壬辰",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "七杀",
+      "rawShiShen": "七杀",
+      "analysis": "事業有突破，創業機會多，注意把握分寸。 水旺利於學習溝通，增進人際關係。",
+      "jieQi": {
+        "name": "穀雨",
+        "start": {
+          "solar": "2026-04-20",
+          "lunar": "二〇二六年三月初四"
+        },
+        "end": {
+          "solar": "2026-05-05",
+          "lunar": "二〇二六年三月十九"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "ganZhi": "癸巳",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官",
+      "analysis": "適合處理公務，升遷有望，但需謹慎行事。 水旺利於學習溝通，增進人際關係。",
+      "jieQi": {
+        "name": "立夏",
+        "start": {
+          "solar": "2026-05-05",
+          "lunar": "二〇二六年三月十九"
+        },
+        "end": {
+          "solar": "2026-05-21",
+          "lunar": "二〇二六年四月初五"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "ganZhi": "癸巳",
+      "wuXing": {
+        "tianGan": "水",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "水",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "正官",
+      "rawShiShen": "正官",
+      "analysis": "適合處理公務，升遷有望，但需謹慎行事。 水旺利於學習溝通，增進人際關係。",
+      "jieQi": {
+        "name": "小滿",
+        "start": {
+          "solar": "2026-05-21",
+          "lunar": "二〇二六年四月初五"
+        },
+        "end": {
+          "solar": "2026-06-05",
+          "lunar": "二〇二六年四月二十"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "ganZhi": "甲午",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印",
+      "analysis": "創意靈感多，適合獨立發展，藝術天分顯露。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "芒種",
+        "start": {
+          "solar": "2026-06-05",
+          "lunar": "二〇二六年四月二十"
+        },
+        "end": {
+          "solar": "2026-06-21",
+          "lunar": "二〇二六年五月初七"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "ganZhi": "甲午",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "火",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "火"
+        }
+      },
+      "shiShen": "偏印",
+      "rawShiShen": "偏印",
+      "analysis": "創意靈感多，適合獨立發展，藝術天分顯露。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "夏至",
+        "start": {
+          "solar": "2026-06-21",
+          "lunar": "二〇二六年五月初七"
+        },
+        "end": {
+          "solar": "2026-07-07",
+          "lunar": "二〇二六年五月廿三"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "ganZhi": "乙未",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印",
+      "analysis": "適合學習進修，貴人運旺，可獲長輩提攜。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "小暑",
+        "start": {
+          "solar": "2026-07-07",
+          "lunar": "二〇二六年五月廿三"
+        },
+        "end": {
+          "solar": "2026-07-23",
+          "lunar": "二〇二六年六月初十"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "ganZhi": "乙未",
+      "wuXing": {
+        "tianGan": "木",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "木",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正印",
+      "rawShiShen": "正印",
+      "analysis": "適合學習進修，貴人運旺，可獲長輩提攜。 木旺利於開拓創新，把握發展機遇。",
+      "jieQi": {
+        "name": "大暑",
+        "start": {
+          "solar": "2026-07-23",
+          "lunar": "二〇二六年六月初十"
+        },
+        "end": {
+          "solar": "2026-08-07",
+          "lunar": "二〇二六年六月廿五"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "ganZhi": "丙申",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩",
+      "analysis": "合作共事順利，團隊發展良好，競爭力強。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "立秋",
+        "start": {
+          "solar": "2026-08-07",
+          "lunar": "二〇二六年六月廿五"
+        },
+        "end": {
+          "solar": "2026-08-23",
+          "lunar": "二〇二六年七月十一"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "ganZhi": "丙申",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "比肩",
+      "rawShiShen": "比肩",
+      "analysis": "合作共事順利，團隊發展良好，競爭力強。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "處暑",
+        "start": {
+          "solar": "2026-08-23",
+          "lunar": "二〇二六年七月十一"
+        },
+        "end": {
+          "solar": "2026-09-07",
+          "lunar": "二〇二六年七月廿六"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "ganZhi": "丁酉",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财",
+      "analysis": "競爭激烈，易有衝突，需沉著應對。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "白露",
+        "start": {
+          "solar": "2026-09-07",
+          "lunar": "二〇二六年七月廿六"
+        },
+        "end": {
+          "solar": "2026-09-23",
+          "lunar": "二〇二六年八月十三"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "ganZhi": "丁酉",
+      "wuXing": {
+        "tianGan": "火",
+        "diZhi": "金",
+        "raw": {
+          "tianGan": "火",
+          "diZhi": "金"
+        }
+      },
+      "shiShen": "劫財",
+      "rawShiShen": "劫财",
+      "analysis": "競爭激烈，易有衝突，需沉著應對。 火旺利於表現自我，擴大社交圈。",
+      "jieQi": {
+        "name": "秋分",
+        "start": {
+          "solar": "2026-09-23",
+          "lunar": "二〇二六年八月十三"
+        },
+        "end": {
+          "solar": "2026-10-08",
+          "lunar": "二〇二六年八月廿八"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "ganZhi": "戊戌",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神",
+      "analysis": "人緣運佳，社交順利，適合展示才能。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "寒露",
+        "start": {
+          "solar": "2026-10-08",
+          "lunar": "二〇二六年八月廿八"
+        },
+        "end": {
+          "solar": "2026-10-23",
+          "lunar": "二〇二六年九月十四"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "ganZhi": "戊戌",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "食神",
+      "rawShiShen": "食神",
+      "analysis": "人緣運佳，社交順利，適合展示才能。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "霜降",
+        "start": {
+          "solar": "2026-10-23",
+          "lunar": "二〇二六年九月十四"
+        },
+        "end": {
+          "solar": "2026-11-07",
+          "lunar": "二〇二六年九月廿九"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "ganZhi": "己亥",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官",
+      "analysis": "創新力強，變革有利，但需注意人際關係。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "立冬",
+        "start": {
+          "solar": "2026-11-07",
+          "lunar": "二〇二六年九月廿九"
+        },
+        "end": {
+          "solar": "2026-11-22",
+          "lunar": "二〇二六年十月十四"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "ganZhi": "己亥",
+      "wuXing": {
+        "tianGan": "土",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "土",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "傷官",
+      "rawShiShen": "伤官",
+      "analysis": "創新力強，變革有利，但需注意人際關係。 土旺利於穩固基礎，深耕細作。",
+      "jieQi": {
+        "name": "小雪",
+        "start": {
+          "solar": "2026-11-22",
+          "lunar": "二〇二六年十月十四"
+        },
+        "end": {
+          "solar": "2026-12-07",
+          "lunar": "二〇二六年十月廿九"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "ganZhi": "庚子",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财",
+      "analysis": "偏財運旺，意外收穫多，投資機會增加。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "大雪",
+        "start": {
+          "solar": "2026-12-07",
+          "lunar": "二〇二六年十月廿九"
+        },
+        "end": {
+          "solar": "2026-12-22",
+          "lunar": "二〇二六年冬月十四"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "ganZhi": "庚子",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "水",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "水"
+        }
+      },
+      "shiShen": "偏財",
+      "rawShiShen": "偏财",
+      "analysis": "偏財運旺，意外收穫多，投資機會增加。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "冬至",
+        "start": {
+          "solar": "2026-12-22",
+          "lunar": "二〇二六年冬月十四"
+        },
+        "end": {
+          "solar": "2027-01-05",
+          "lunar": "二〇二六年冬月廿八"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "month": 12,
+      "ganZhi": "辛丑",
+      "wuXing": {
+        "tianGan": "金",
+        "diZhi": "土",
+        "raw": {
+          "tianGan": "金",
+          "diZhi": "土"
+        }
+      },
+      "shiShen": "正財",
+      "rawShiShen": "正财",
+      "analysis": "財運穩定，適合投資理財，業務拓展順利。 金旺利於謀劃穩健發展，注重規矩和紀律。",
+      "jieQi": {
+        "name": "小寒",
+        "start": {
+          "solar": "2027-01-05",
+          "lunar": "二〇二六年冬月廿八"
+        },
+        "end": {
+          "solar": "2027-01-20",
+          "lunar": "二〇二六年腊月十三"
+        }
+      }
+    }
+  ],
+  "relations": {
+    "pairwise": [
+      {
+        "from": 2,
+        "to": 3,
+        "kind": "害",
+        "category": "地支六害",
+        "label": "申亥害",
+        "elements": [
+          "申",
+          "亥"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "indices": [
+          1,
+          3
+        ],
+        "kind": "拱会",
+        "category": "拱会方",
+        "label": "拱会北方水",
+        "elements": [
+          "亥",
+          "丑"
+        ],
+        "missing": "子"
+      },
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "kind": "半合",
+        "category": "半合局",
+        "label": "半金局",
+        "elements": [
+          "酉",
+          "丑"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "wuXing": {
+      "year": {
+        "tianGan": "土",
+        "diZhi": "金"
+      },
+      "month": {
+        "tianGan": "火",
+        "diZhi": "土"
+      },
+      "day": {
+        "tianGan": "火",
+        "diZhi": "金"
+      },
+      "time": {
+        "tianGan": "土",
+        "diZhi": "水"
+      }
+    },
+    "mingGe": "正官格",
+    "mingType": "丙火命",
+    "wuXingAnalysis": {
+      "strongest": "土",
+      "weakest": "木"
+    },
+    "shiShen": [
+      {
+        "pillar": "年柱",
+        "rawPillar": "年柱",
+        "shiShen": "傷官",
+        "name": "傷官"
+      },
+      {
+        "pillar": "月柱",
+        "rawPillar": "月柱",
+        "shiShen": "劫財",
+        "name": "劫財"
+      },
+      {
+        "pillar": "時柱",
+        "rawPillar": "时柱",
+        "shiShen": "傷官",
+        "name": "傷官"
+      },
+      {
+        "pillar": "年支",
+        "rawPillar": "年支",
+        "shiShen": "正財",
+        "strength": 1,
+        "isHidden": true,
+        "name": "正財"
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "傷官",
+        "strength": 1,
+        "isHidden": true,
+        "name": "傷官"
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "正官",
+        "description": "代表正统权威、地位、名誉，适合从政、当领导",
+        "strength": 0.7,
+        "isHidden": true,
+        "name": "正官"
+      },
+      {
+        "pillar": "月支",
+        "rawPillar": "月支",
+        "shiShen": "正財",
+        "strength": 0.5,
+        "isHidden": true,
+        "name": "正財"
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "偏財",
+        "strength": 1,
+        "isHidden": true,
+        "name": "偏財"
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "七杀",
+        "description": "代表非正统权力、个性、进取心，但易冲动",
+        "strength": 0.7,
+        "isHidden": true,
+        "name": "七杀"
+      },
+      {
+        "pillar": "日支",
+        "rawPillar": "日支",
+        "shiShen": "食神",
+        "description": "代表才智、口才、人缘，适合文教、饮食行业",
+        "strength": 0.5,
+        "isHidden": true,
+        "name": "食神"
+      },
+      {
+        "pillar": "時支",
+        "rawPillar": "时支",
+        "shiShen": "七杀",
+        "description": "代表非正统权力、个性、进取心，但易冲动",
+        "strength": 1,
+        "isHidden": true,
+        "name": "七杀"
+      },
+      {
+        "pillar": "時支",
+        "rawPillar": "时支",
+        "shiShen": "偏印",
+        "description": "代表非正统学习、创造力、艺术天分，但易固执",
+        "strength": 0.7,
+        "isHidden": true,
+        "name": "偏印"
+      }
+    ]
+  },
+  "rawWuXing": {
+    "counts": {
+      "金": 2,
+      "木": 0,
+      "水": 1,
+      "火": 2,
+      "土": 3
+    }
+  },
+  "dstAdjusted": null,
+  "id": "af05c0e2-dbed-41f8-bb60-ee9b268cd045",
+  "_recordSettings": {
+    "useTrueSolarTime": true,
+    "useEarlyLateZiHour": false,
+    "dstAdjusted": null
+  }
+}
