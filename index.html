@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字命理查詢</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .element-wood { color: #16a34a; } /* Green */
+        .element-fire { color: #dc2626; } /* Red */
+        .element-earth { color: #d97706; } /* Brown context orange */
+        .element-metal { color: #4b5563; } /* Gray */
+        .element-water { color: #2563eb; } /* Blue */
+        
+        .bg-wood { background-color: #dcfce7; color: #14532d; }
+        .bg-fire { background-color: #fee2e2; color: #7f1d1d; }
+        .bg-earth { background-color: #fef3c7; color: #78350f; }
+        .bg-metal { background-color: #f3f4f6; color: #1f2937; }
+        .bg-water { background-color: #dbeafe; color: #1e3a8a; }
+    </style>
+</head>
+<body class="bg-indigo-50 min-h-screen py-10 px-4">
+
+    <div class="max-w-4xl mx-auto space-y-8">
+        <!-- 查詢表單區塊 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-center text-slate-800 mb-8">八字命盤查詢</h1>
+            
+            <form id="baziForm" class="flex flex-col md:flex-row gap-4 justify-center items-end">
+                <div class="w-full md:w-auto">
+                    <label for="birthDate" class="block text-sm font-semibold text-slate-600 mb-2">出生日期</label>
+                    <input type="date" id="birthDate" name="birthDate" required
+                        class="w-full md:w-48 px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition">
+                </div>
+
+                <div class="w-full md:w-auto">
+                    <label for="birthTime" class="block text-sm font-semibold text-slate-600 mb-2">出生時辰</label>
+                    <div class="relative">
+                        <select id="birthTime" name="birthTime" required
+                            class="w-full md:w-56 px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg appearance-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition pr-10">
+                            <option value="" disabled selected>請選擇時辰</option>
+                            <option value="23-01">子時 (23:00 - 01:00)</option>
+                            <option value="01-03">丑時 (01:00 - 03:00)</option>
+                            <option value="03-05">寅時 (03:00 - 05:00)</option>
+                            <option value="05-07">卯時 (05:00 - 07:00)</option>
+                            <option value="07-09">辰時 (07:00 - 09:00)</option>
+                            <option value="09-11">巳時 (09:00 - 11:00)</option>
+                            <option value="11-13">午時 (11:00 - 13:00)</option>
+                            <option value="13-15">未時 (13:00 - 15:00)</option>
+                            <option value="15-17">申時 (15:00 - 17:00)</option>
+                            <option value="17-19">酉時 (17:00 - 19:00)</option>
+                            <option value="19-21">戌時 (19:00 - 21:00)</option>
+                            <option value="21-23">亥時 (21:00 - 23:00)</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-500">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-auto">
+                    <button type="submit" 
+                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-6 rounded-lg transition duration-200 shadow-lg transform active:scale-95">
+                        立即排盤
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- 結果顯示區 -->
+        <div id="resultArea" class="hidden space-y-6">
+            
+            <!-- 1. 基本資料卡片 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-indigo-900 px-6 py-4">
+                    <h2 class="text-xl text-white font-bold flex items-center">
+                        <span class="text-indigo-200 mr-2">📌</span> 命盤基本資料
+                    </h2>
+                </div>
+                <div class="p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 text-sm">
+                    <div>
+                        <span class="text-slate-400 block text-xs uppercase tracking-wider mb-1">農曆日期</span>
+                        <span id="lunarDateDisplay" class="font-medium text-slate-800 text-lg"></span>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block text-xs uppercase tracking-wider mb-1">生肖</span>
+                        <span id="zodiacDisplay" class="font-medium text-slate-800 text-lg"></span>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block text-xs uppercase tracking-wider mb-1">命主</span>
+                        <span id="mingTypeDisplay" class="font-medium text-indigo-600 text-lg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. 八字四柱 (核心) -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-6 border-l-4 border-indigo-500 pl-3">八字命造</h3>
+                <div class="grid grid-cols-4 gap-4 text-center">
+                    <!-- 標頭 -->
+                    <div class="text-slate-500 font-medium pb-2 border-b">年柱</div>
+                    <div class="text-slate-500 font-medium pb-2 border-b">月柱</div>
+                    <div class="text-slate-500 font-medium pb-2 border-b text-indigo-600">日柱</div>
+                    <div class="text-slate-500 font-medium pb-2 border-b">時柱</div>
+
+                    <!-- 天干 -->
+                    <div id="yearGanBox" class="py-2"></div>
+                    <div id="monthGanBox" class="py-2"></div>
+                    <div id="dayGanBox" class="py-2"></div>
+                    <div id="timeGanBox" class="py-2"></div>
+
+                    <!-- 地支 -->
+                    <div id="yearZhiBox" class="py-2"></div>
+                    <div id="monthZhiBox" class="py-2"></div>
+                    <div id="dayZhiBox" class="py-2"></div>
+                    <div id="timeZhiBox" class="py-2"></div>
+                </div>
+            </div>
+
+            <!-- 3. 五行與格局分析 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 五行分析 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-green-500 pl-3">五行分析</h3>
+                    <div id="wuxingBar" class="space-y-3 mb-4">
+                        <!-- JS 動態生成 -->
+                    </div>
+                    <p id="wuxingSummary" class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg leading-relaxed"></p>
+                </div>
+
+                <!-- 格局與命格 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-orange-500 pl-3">命格分析</h3>
+                    <div class="mb-4">
+                        <span id="mingGeType" class="text-xl font-bold text-slate-800 ml-2"></span>
+                    </div>
+                    <p id="mingGeDesc" class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg leading-relaxed mb-4"></p>
+                    <div id="mingGeStrength" class="text-sm border-t pt-2 mt-2"></div>
+                </div>
+            </div>
+
+            <!-- 十神分析 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-amber-500 pl-3">十神分析</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left text-slate-600">
+                        <thead class="text-xs text-slate-700 uppercase bg-slate-50">
+                            <tr>
+                                <th scope="col" class="px-4 py-3">柱位</th>
+                                <th scope="col" class="px-4 py-3">十神</th>
+                                <th scope="col" class="px-4 py-3 min-w-[200px]">含意</th>
+                                <th scope="col" class="px-4 py-3 text-center">類型</th>
+                            </tr>
+                        </thead>
+                        <tbody id="shiShenTableBody" class="divide-y divide-slate-100">
+                            <!-- JS 動態生成 -->
+                        </tbody>
+                    </table>
+                </div>
+                <p id="shiShenSummary" class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg leading-relaxed mt-4"></p>
+            </div>
+
+            <!-- 神煞分析 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-purple-500 pl-3">神煞分析</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left text-slate-600">
+                        <thead class="text-xs text-slate-700 uppercase bg-slate-50">
+                            <tr>
+                                <th scope="col" class="px-4 py-3">神煞名稱</th>
+                                <th scope="col" class="px-4 py-3 text-center">類型</th>
+                                <th scope="col" class="px-4 py-3">所在柱位</th>
+                                <th scope="col" class="px-4 py-3 min-w-[200px]">含意</th>
+                            </tr>
+                        </thead>
+                        <tbody id="shenShaTableBody" class="divide-y divide-slate-100">
+                            <!-- JS 動態生成 -->
+                        </tbody>
+                    </table>
+                </div>
+                <p id="shenShaSummary" class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg leading-relaxed mt-4"></p>
+            </div>
+
+            <!-- 5. 大運 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">大運排盤</h3>
+                <div id="dayunInfo" class="mb-4 text-sm text-slate-500"></div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border-collapse text-center text-sm" id="dayunTable">
+                        <!-- JS 動態生成 -->
+                    </table>
+                </div>
+            </div>
+
+            <!-- 6. 命盤關係 (刑衝會合) -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-pink-500 pl-3">命盤關係 (刑衝會合)</h3>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-600 mb-2">天干地支關係</h4>
+                        <div id="pairwiseRelations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-600 mb-2">合局與方局</h4>
+                        <div id="groupRelations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. 流年運勢 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-yellow-500 pl-3">流年運勢</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border-collapse text-center text-sm" id="liuNianTable">
+                        <!-- JS 動態生成 -->
+                    </table>
+                </div>
+                <div class="mt-4 p-3 bg-red-50 rounded border border-red-100 text-sm text-slate-600">
+                    <span class="font-bold text-red-600 mr-2">⚠️ 特別注意：</span>
+                    表格中標示為紅色背景的年份（七杀、傷官），代表該年變動較大或壓力較強，行事宜謹慎保守，注意身體健康與人際關係。
+                </div>
+            </div>
+
+            <!-- 8. 流月運勢 -->
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-cyan-500 pl-3">近期流月運勢</h3>
+                <div id="liuYueList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- JS 動態生成流月列表 -->
+                </div>
+            </div>
+            
+            <!-- 原始資料 (Hidden default, toggleable) -->
+            <div class="text-center">
+                <button onclick="$('#rawJson').toggle()" class="text-indigo-400 text-sm hover:underline">查看原始 JSON 資料</button>
+            </div>
+            <pre id="rawJson" class="hidden mt-4 p-4 bg-slate-800 text-green-400 rounded-xl text-xs overflow-x-auto text-left"></pre>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // 元素對應顏色 helper
+            const getElementClass = (text) => {
+                if(text.includes('木')) return 'element-wood';
+                if(text.includes('火')) return 'element-fire';
+                if(text.includes('土')) return 'element-earth';
+                if(text.includes('金')) return 'element-metal';
+                if(text.includes('水')) return 'element-water';
+                return 'text-slate-800';
+            };
+            
+            const getBGClass = (text) => {
+                if(text.includes('木')) return 'bg-wood';
+                if(text.includes('火')) return 'bg-fire';
+                if(text.includes('土')) return 'bg-earth';
+                if(text.includes('金')) return 'bg-metal';
+                if(text.includes('水')) return 'bg-water';
+                return 'bg-slate-100';
+            };
+
+            const parseIfString = (data) => {
+                if (typeof data === 'string') {
+                    try { return JSON.parse(data); } catch(e) { return null; }
+                }
+                return data;
+            };
+
+            $('#baziForm').on('submit', function(e) {
+                e.preventDefault();
+
+                const date = $('#birthDate').val();
+                const timeRange = $('#birthTime').val();
+                const $btn = $(this).find('button');
+                const originalText = $btn.text();
+                
+                $btn.prop('disabled', true).text('命盤計算中...');
+
+                $.ajax({
+                    url: 'http://localhost:3000/api/calculate',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        birthDate: date,
+                        birthTimeRange: timeRange
+                    }),
+                    success: function(response) {
+                        $('#resultArea').removeClass('hidden');
+
+                        if(!response.data) {
+                            alert(response.message || '查無資料');
+                            return;
+                        }
+
+                        const d = response.data;
+                        const wuXing = parseIfString(d.wuXing);
+                        const mingGe = parseIfString(d.mingGe);
+                        const wuXingAnalysis = parseIfString(d.wuXingAnalysis);
+                        const shiShenAnalysis = parseIfString(d.shiShenAnalysis);
+                        const shenSha = parseIfString(d.shenShaAnalysis);
+                        const daYun = parseIfString(d.daYunWithStarting);
+
+                        // 1. 基本資料
+                        $('#solarDateDisplay').text(d.solarDate);
+                        $('#lunarDateDisplay').text(d.lunarDate);
+                        $('#zodiacDisplay').text(d.zodiacSign);
+                        $('#mingTypeDisplay').text(d.mingType);
+
+                        // 2. 四柱
+                        // 解析各柱的天干地支
+                        const setPillar = (type, pillarText, wxInfo) => {
+                            if (!pillarText) return;
+                            const gan = pillarText[0];
+                            const zhi = pillarText[1];
+                            const ganEle = wxInfo?.tianGan || '';
+                            const zhiEle = wxInfo?.diZhi || '';
+
+                            $(`#${type}GanBox`).html(`
+                                <div class="text-3xl font-serif ${getElementClass(ganEle)}">${gan}</div>
+                                <div class="text-xs text-slate-500 mt-1 font-medium bg-slate-100 rounded px-1 inline-block" title="天干五行：${ganEle}">${ganEle}</div>
+                            `);
+                            
+                            $(`#${type}ZhiBox`).html(`
+                                <div class="text-3xl font-serif ${getElementClass(zhiEle)}">${zhi}</div>
+                                <div class="text-xs text-slate-500 mt-1 font-medium bg-slate-100 rounded px-1 inline-block" title="地支五行：${zhiEle}">${zhiEle}</div>
+                            `);
+                        };
+
+                        setPillar('year', d.yearPillar, wuXing?.year);
+                        setPillar('month', d.monthPillar, wuXing?.month);
+                        setPillar('day', d.dayPillar, wuXing?.day);
+                        setPillar('time', d.timePillar, wuXing?.time);
+
+                        // 3. 五行分析
+                        if (wuXingAnalysis) {
+                            const counts = wuXingAnalysis.counts;
+                            let barHtml = '';
+                            const total = Object.values(counts).reduce((a,b)=>a+b, 0);
+                            
+                            ['金', '木', '水', '火', '土'].forEach(ele => {
+                                const count = counts[ele] || 0;
+                                const pct = total > 0 ? (count / total) * 100 : 0;
+                                
+                                barHtml += `
+                                    <div class="flex items-center">
+                                        <div class="w-10 text-sm font-bold ${getElementClass(ele)}">${ele}</div>
+                                        <div class="w-8 text-xs text-slate-500 text-right pr-2">${count}</div>
+                                        <div class="flex-1 bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                            <div class="h-2.5 rounded-full ${getBGClass(ele).replace('color', 'bg').split(' ')[0]}" style="width: ${pct}%"></div>
+                                        </div>
+                                    </div>
+                                `;
+                            });
+                            $('#wuxingBar').html(barHtml);
+                            // 移除換行符號整理文字
+                            $('#wuxingSummary').html((wuXingAnalysis.analysis || '').replace(/\n/g, '<br>'));
+                        }
+
+                        // 格局
+                        if (mingGe) {
+                            $('#mingGeType').text(mingGe.type);
+                            $('#mingGeDesc').text(mingGe.description);
+                            $('#mingGeStrength').html((mingGe.strength?.explanation || '').replace(/\n/g, '<br>'));
+                        }
+
+                        // 十神分析
+                        if (shiShenAnalysis) {
+                            let rows = '';
+                            (shiShenAnalysis.relations || []).forEach(rel => {
+                                const isHidden = rel.isHidden ? '<span class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded">藏干</span>' : '<span class="text-xs text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-bold">本氣</span>';
+                                const shiShenColor = ['七杀', '傷官', '偏印', '劫財'].some(x => rel.shiShen.includes(x)) ? 'text-red-600' : 'text-emerald-700';
+                                
+                                rows += `
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-50 last:border-0">
+                                        <td class="px-4 py-3 font-medium text-slate-700">${rel.pillar}</td>
+                                        <td class="px-4 py-3 font-bold ${shiShenColor}">${rel.shiShen}</td>
+                                        <td class="px-4 py-3 text-xs text-slate-600 leading-relaxed">${rel.description || ''}</td>
+                                        <td class="px-4 py-3 text-center">${isHidden}</td>
+                                    </tr>
+                                `;
+                            });
+                            $('#shiShenTableBody').html(rows);
+                            $('#shiShenSummary').html((shiShenAnalysis.analysis || '').replace(/\n/g, '<br>'));
+                        }
+
+                        // 4. 神煞
+                        if (shenSha) {
+                            let rows = '';
+                            const allSha = [
+                                ...(shenSha.jiShen || []).map(s => ({...s, isJi: true})), 
+                                ...(shenSha.xiongSha || []).map(s => ({...s, isJi: false}))
+                            ];
+                            
+                            allSha.forEach(item => {
+                                const typeBadge = item.isJi 
+                                    ? '<span class="px-2 py-0.5 rounded text-xs font-bold bg-green-100 text-green-700">吉神</span>'
+                                    : '<span class="px-2 py-0.5 rounded text-xs font-bold bg-red-100 text-red-700">凶煞</span>';
+                                
+                                rows += `
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-50 last:border-0">
+                                        <td class="px-4 py-3 font-bold text-slate-700">${item.name}</td>
+                                        <td class="px-4 py-3 text-center">${typeBadge}</td>
+                                        <td class="px-4 py-3 text-slate-600">${item.location}</td>
+                                        <td class="px-4 py-3 text-xs text-slate-500 leading-relaxed">${item.description}</td>
+                                    </tr>
+                                `;
+                            });
+                            
+                            if(allSha.length === 0) {
+                                rows = '<tr><td colspan="4" class="px-4 py-8 text-center text-slate-400">無特殊神煞</td></tr>';
+                            }
+
+                            $('#shenShaTableBody').html(rows);
+                            $('#shenShaSummary').html((shenSha.analysis || '').replace(/\n/g, '<br>'));
+                        }
+
+                        // 5. 大運
+                        if (daYun) {
+                            $('#dayunInfo').text(`${daYun.startingAge?.age} (${daYun.startingAge?.startDate})`);
+                            
+                            const pillars = daYun.daYun || [];
+                            
+                            let rowShiShen = '<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600">主星</td>';
+                            let rowGan = '<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600">天干</td>';
+                            let rowZhi = '<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600">地支</td>';
+                            let rowAge = '<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600">虛歲</td>';
+                            let rowYear = '<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600">起運</td>';
+
+                            pillars.forEach(dy => {
+                                const gan = dy.ganZhi[0];
+                                const zhi = dy.ganZhi[1];
+                                const wuxingGan = dy.wuXing?.tianGan || '';
+                                const wuxingZhi = dy.wuXing?.diZhi || '';
+                                
+                                rowShiShen += `<td class="p-2 border border-slate-100 min-w-[60px] text-xs font-medium text-slate-600">${dy.shiShen}</td>`;
+                                rowGan += `<td class="p-2 border border-slate-100 text-xl font-serif ${getElementClass(wuxingGan)}">${gan}</td>`;
+                                rowZhi += `<td class="p-2 border border-slate-100 text-xl font-serif ${getElementClass(wuxingZhi)}">${zhi}</td>`;
+                                rowAge += `<td class="p-2 border border-slate-100 text-xs text-slate-500">${dy.startYear}</td>`;
+                                rowYear += `<td class="p-2 border border-slate-100 text-xs text-slate-500">${dayjs(dy.startDate).year()}</td>`;
+                            });
+
+                            rowShiShen += '</tr>';
+                            rowGan += '</tr>';
+                            rowZhi += '</tr>';
+                            rowAge += '</tr>';
+                            rowYear += '</tr>';
+
+                            $('#dayunTable').html(rowShiShen + rowGan + rowZhi + rowAge + rowYear);
+                        }
+
+                        // 6. 命盤關係
+                        const relations = parseIfString(d.relations);
+                        if(relations) {
+                            // Pairwise
+                            const pairHtml = (relations.pairwise || []).map(r => `
+                                <div class="bg-slate-50 p-2 rounded border border-slate-200 text-sm">
+                                    <span class="font-bold text-slate-700">${r.label}</span>
+                                    <span class="bg-slate-200 text-xs px-1 rounded ml-1 text-slate-600">${r.category}</span>
+                                </div>
+                            `).join('') || '<div class="text-sm text-slate-400">無明顯衝合</div>';
+                            $('#pairwiseRelations').html(pairHtml);
+
+                            // Groups
+                            const groupHtml = (relations.groups || []).map(g => `
+                                <div class="bg-indigo-50 p-2 rounded border border-indigo-100 text-sm">
+                                    <span class="font-bold text-indigo-700">${g.label}</span>
+                                    <span class="text-xs text-indigo-500 ml-1">(${g.elements.join(',')})</span>
+                                </div>
+                            `).join('') || '<div class="text-sm text-slate-400">無合局</div>';
+                            $('#groupRelations').html(groupHtml);
+                        }
+
+                        // 7. 流年運勢
+                        const liuNian = parseIfString(d.liuNian);
+                        if(liuNian && Array.isArray(liuNian)) {
+                            // 顯示所有流年資料
+                            const list = liuNian;
+                            
+                            // 第一列固定顯示 (Sticky Column)
+                            const stickyClass = "sticky left-0 z-10 shadow-sm border-r border-slate-200";
+
+                            let rowShiShen = `<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600 ${stickyClass}">主星</td>`;
+                            let rowGan = `<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600 ${stickyClass}">天干</td>`;
+                            let rowZhi = `<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600 ${stickyClass}">地支</td>`;
+                            let rowAge = `<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600 ${stickyClass}">虛歲</td>`;
+                            let rowYear = `<tr><td class="p-3 border border-slate-100 bg-slate-50 font-bold whitespace-nowrap text-slate-600 ${stickyClass}">年份</td>`;
+
+                            list.forEach(ln => {
+                                const gan = ln.ganZhi[0];
+                                const zhi = ln.ganZhi[1];
+                                const wuxingGan = ln.wuXing?.tianGan || '';
+                                const wuxingZhi = ln.wuXing?.diZhi || '';
+                                
+                                // 標記兇星 (七杀、傷官)
+                                const isMajorXiong = ['七杀', '七殺', '傷官', '伤官'].some(x => ln.shiShen.includes(x));
+                                const isXiong = ['七杀', '七殺', '傷官', '伤官', '偏印', '劫財', '劫财'].some(x => ln.shiShen.includes(x));
+                                
+                                const cellClass = isMajorXiong ? 'bg-red-50 border-red-100' : 'border-slate-100';
+                                const shiShenColor = isXiong ? 'text-red-600 font-bold' : 'text-slate-600';
+                                const xiongMarker = isMajorXiong ? '<div class="text-[10px] text-red-500 mt-1 transform scale-90">⚠️注意</div>' : '';
+
+                                rowShiShen += `<td class="p-2 border ${cellClass} min-w-[60px] text-xs font-medium ${shiShenColor}">${ln.shiShen}${xiongMarker}</td>`;
+                                rowGan += `<td class="p-2 border ${cellClass} text-xl font-serif ${getElementClass(wuxingGan)}">${gan}</td>`;
+                                rowZhi += `<td class="p-2 border ${cellClass} text-xl font-serif ${getElementClass(wuxingZhi)}">${zhi}</td>`;
+                                rowAge += `<td class="p-2 border ${cellClass} text-xs text-slate-500">${ln.age}歲</td>`;
+                                rowYear += `<td class="p-2 border ${cellClass} text-xs text-slate-500">${ln.year}</td>`;
+                            });
+
+                            rowShiShen += '</tr>';
+                            rowGan += '</tr>';
+                            rowZhi += '</tr>';
+                            rowAge += '</tr>';
+                            rowYear += '</tr>';
+
+                            $('#liuNianTable').html(rowShiShen + rowGan + rowZhi + rowAge + rowYear);
+                        }
+
+                        // 8. 流月運勢
+                        const liuYue = parseIfString(d.liuYue);
+                        if(liuYue && Array.isArray(liuYue)) {
+                            let lyHtml = '';
+                            // 顯示所有流月
+                            liuYue.forEach(ly => {
+                                lyHtml += `
+                                    <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div>
+                                                <span class="text-sm font-bold text-slate-500 block">${ly.year}年${ly.month}月</span>
+                                                <span class="text-xl font-serif font-bold text-slate-800">${ly.ganZhi}</span>
+                                            </div>
+                                            <span class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-600">${ly.shiShen}</span>
+                                        </div>
+                                        <div class="text-xs text-slate-500 mb-2">
+                                            <span class="bg-indigo-50 text-indigo-700 px-1 rounded mr-1">${ly.jieQi?.name}</span>
+                                            ${ly.jieQi?.start?.solar} ~ ${ly.jieQi?.end?.solar}
+                                        </div>
+                                        <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-2 mt-2">
+                                            ${ly.analysis || '平順之月'}
+                                        </p>
+                                    </div>
+                                `;
+                            });
+                            $('#liuYueList').html(lyHtml);
+                        }
+
+                        // 原始資料
+                        $('#rawJson').text(JSON.stringify(d, null, 2));
+                    },
+                    error: function(xhr) {
+                        alert('發生錯誤：' + (xhr.responseJSON?.error || '連線失敗'));
+                    },
+                    complete: function() {
+                        $btn.prop('disabled', false).text(originalText);
+                    }
+                });
+            });
+        });
+
+        // 引入 Day.js
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</body>
+</html>
