@@ -344,6 +344,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <!-- 神煞分析 -->
+            <?php if(false): ?>
             <div class="bg-white rounded-2xl shadow-lg p-6">
                 <h3 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-purple-500 pl-3">神煞分析</h3>
                 <div class="overflow-x-auto">
@@ -390,6 +391,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                      <?php echo isset($resultData['shenShaAnalysis']['analysis']) ? nl2br(htmlspecialchars($resultData['shenShaAnalysis']['analysis'])) : ''; ?>
                 </p>
             </div>
+            <?php endif; ?>
 
             <!-- 5. 大運 -->
             <div class="bg-white rounded-2xl shadow-lg p-6">
